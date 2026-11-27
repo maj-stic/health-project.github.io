@@ -1,22 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<!--General Website Color Pallete
+                  HEX            RGB
+Red           | #B73A45      183, 58, 69
+Dark Red      | #911833      145, 27, 51
+Blue          | #527B94      82, 123, 148
+Dark Blue     | #34557D      52, 85, 125
+Green         | #75AD56      117, 173, 86
+Dark Green    | #4A843B      74, 132, 59
+Pale Yellow   | #EFE6B6      239, 230, 182
+Darker Yellow | #DDC28B      221, 194, 139 
+-->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap');
+</style>
+  
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Website</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="calendar.css" />
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="home-style.css" />
+    <link rel="stylesheet" href="banner.css" />
   <script src="script.js" defer></script>
 </head>
+
 <body>
-   
+    <!--banner.css stuff here-->
 <header class = "top-bar" aria-hidden="true">
     <div class = "rounded-side" aria-hidden="true"></div>
     <div class = "profile-circle" aria-hidden="true"></div>
     <div class = "header-logo" role="img" aria-label="Logo"></div>
-    <p class = "header-text">Personal Calendar</p>
+    <div class = "profile-image" role = "img" aria-label="Logo"></div>
+    <p class = "header-text">Health Calendar Project</p>
+    <a href = "calendar.html" class = "cal-nav-link" aria-label="Go To Calendar"></a>
+    <a href = "index.html" class = "home-nav-link" aria-label="Go To Home"></a>
+
+<!--home-style.css stuff here-->
+
+<div class = "banner-image" role = "img" aria-label="Stock Image from Canva"></div>
+<p class = "banner-text">
+  Manage Your Wellness<br>
+  In One Place.
+</p>
+</header>
+
+<header>
+<div class ="banner-block" aria-hidden="true"></div>    
+<div class = "banner-under" aria-hidden="true"></div>
+<p class = "banner-under-text">
+  Manage Your Wellness<br>
+  In One Place.
+</p>
+<div class = "text-block-1" aria-hidden="true"></div>
+<div class = "text-block-2" aria-hidden="true"></div>
+<div class = "text-block-3" aria-hidden="true"></div>
+<div class = "text-block-4" aria-hidden="true"></div>
 </header>
 
 </body>
-
 </html>

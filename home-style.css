@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #EFE6B6 55%, #DDC28B 100%)
+}
+
+/*       General Website Color Pallete
+------------------------------------------
+                  HEX            RGB
+Red           | #B73A45      183, 58, 69
+Dark Red      | #911833      145, 27, 51
+Blue          | #527B94      82, 123, 148
+Dark Blue     | #34557D      52, 85, 125
+Green         | #75AD56      117, 173, 86
+Dark Green    | #4A843B      74, 132, 59
+Pale Yellow   | #EFE6B6      239, 230, 182
+Darker Yellow | #DDC28B      221, 194, 139 
+------------------------------------------
+*/
+
+.banner-block {
+    position:relative;
+    top: 0px;
+    width: 100%;
+    height: 800px;
+    z-index: -1;
+    background: linear-gradient(360deg, #540b0e30 0%, #ffffff00 100%);
+    background-color: rgb(117, 173, 86);
+}
+
+.banner-under {
+    position:relative;
+    top: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(74, 132, 59);
+}
+
+.banner-text {
+    position: relative;
+    font-family: "BIZ UDPGothic", sans-serif;
+    left: 0%;
+    text-align: center;
+    font-size: 130px;
+    font-weight: 900;
+    top: -650px;
+    color: rgb(239, 230, 182);
+    pointer-events: none;
+    user-select: none;
+    z-index: 2;
+}
+.banner-under-text {
+    position: relative;
+    font-family: "BIZ UDPGothic", sans-serif;
+    left: 3px;
+    text-align: center;
+    font-size: 130px;
+    font-weight: 900;
+    top: -785px;
+    color: rgb(74, 132, 59);
+    pointer-events: none;
+    user-select: none;
+    z-index: 2;
+}
+
+.banner-image {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    mix-blend-mode:darken;
+    background-image: url(images/pexels-bertellifotografia-29509476.jpg);
+    mask-image: radial-gradient(circle,rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.0) 100%);
+    top:99px;
+    background-position: center;
+    background-position: top;
+    z-index: 1;
+
+}
+

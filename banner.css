@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+}
+/*       General Website Color Pallete
+------------------------------------------
+                  HEX            RGB
+Red           | #B73A45      183, 58, 69
+Dark Red      | #911833      145, 27, 51
+Blue          | #527B94      82, 123, 148
+Dark Blue     | #34557D      52, 85, 125
+Green         | #75AD56      117, 173, 86
+Dark Green    | #4A843B      74, 132, 59
+Pale Yellow   | #EFE6B6      239, 230, 182
+Darker Yellow | #DDC28B      221, 194, 139 
+------------------------------------------
+*/
+
+.top-bar {
+    position:relative;
+    width: 100%;
+    height: 100px;
+    filter: drop-shadow(0 4px 8px rgba(52, 85, 125, 0.45));
+    background: rgb(52, 85, 125);
+    z-index: 5;
+}
+
+.rounded-side {
+    position:absolute;
+    left: -200px;
+    top: -30px;
+    width: 400px;
+    height: 190px;
+    border-radius: 90px;
+    background-color: rgb(52, 85, 125);
+    pointer-events: none;
+    user-select: none;
+    z-index: 6;
+}
+
+.header-logo {
+    position:absolute;
+    top: -12px;
+    width: 180px;
+    height: 180px;
+    background-image: url("images/logotemp.png");
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.45));
+    background-size: contain;
+    pointer-events: none;
+    user-select: none;
+    z-index: 6;
+}
+
+.header-text {
+    position:absolute;
+    top: 16px;
+    font-family: "BIZ UDPGothic", sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    margin: 0;
+    left: 210px;
+    color: rgb(210, 255, 255);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.45));
+    pointer-events: none;
+    user-select: none;
+    z-index: 6;
+}
+
+.profile-circle {
+    position:absolute;
+    right: 30px;
+    top: 10px;
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    outline: 5px solid rgb(52, 85, 125);
+    background-color: rgb(210, 255, 255);
+    box-shadow: inset 0 0 48px 6px rgba(52, 85, 125, 0.65);
+    pointer-events: none;
+    user-select: none;
+    z-index: 6;
+}
+
+.profile-image {
+    position:absolute;
+    right: 9px;
+    top: -8px;
+    width: 180px;
+    height: 180px;
+    mix-blend-mode: overlay;
+    background-image: url("images/profile-image.png");
+    background-size: contain;
+    opacity: 50%;
+    z-index: 6;
+    pointer-events: none;
+}
+
+.cal-nav-link {
+    position:absolute;
+    right: 300px;
+    top: 15px;
+    width: 100px;
+    height: 71px;
+    transform: scale(0.8);
+    background-image: url("images/cal-but-idle.png");
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+    z-index: 5;
+}
+.cal-nav-link:hover {
+    filter:brightness(0.7);
+    transform: scale(.75);
+    background-image: url("images/cal-but-hover.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.home-nav-link {
+    position:absolute;
+    right: 200px;
+    top: -3px;
+    width: 100px;
+    height: 100px;
+   transform: scale(0.8);
+    background-image: url("images/home-idle.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+    z-index: 5;
+}
+.home-nav-link:hover {
+    filter:brightness(0.7);
+    transform: scale(.75);
+    background-image: url("images/home-hover.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
